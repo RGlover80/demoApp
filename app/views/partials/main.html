@@ -1,0 +1,17 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="jumbotron">
+  <h1>Demo App </h1>
+  <p> <span ng-hide="currentUser"> 
+    Please Log In </span>
+  </p>
+  <p> <span ng-show="currentUser">
+    <a class="btn btn-lg btn-success" ng-href="/start">{{currentUser.name}}</a>
+  </span>
+  </p>
+</div>
+<div class="footer">
+  <p> footer</p>
+</div>
+
+<!-- <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyDNVGiwi9d8FrqWIlSwUcbfod9LWB8_G0Ygk8U1CZVTkRLNGPmw" alt="I'm Yeoman"><br> -->
