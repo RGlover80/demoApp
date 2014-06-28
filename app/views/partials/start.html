@@ -3,22 +3,9 @@
 <div class="jumbotron">
   <h1>Start of App </h1>
 </div>
-<table class="table table-striped table-condensed">
-	<thead>
-		<tr>
-			<th> Digit </th>
-			<th> Number </th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr ng-repeat="number in list">
-			<td>{{number.digit}}</td>
-			<td>{{number.number}}</td>
-		</tr>
-	</tbody>
-</table>
+<div class="col-md-2"><img ng-src="data:image/jpeg;base64,{{awesomeThings[0].picture}}" style="height: 50px;"></div>
 
-<table class="table">
+<table class="table table-striped table-condensed">
 	<tbody >
 		<thead>
 			<tr>
@@ -38,4 +25,22 @@
 </div>
 
 </div>
+
+<!--
+<table class="table table-striped table-condensed">
+	<thead>
+		<tr>
+			<th> Digit </th>
+			<th> Number </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="number in list">
+			<td>{{number.digit}}</td>
+			<td>{{number.number}}</td>
+		</tr>
+	</tbody>
+</table>
+-->
+
 

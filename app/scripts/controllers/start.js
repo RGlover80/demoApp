@@ -9,20 +9,25 @@ angular.module('demoAppApp')
 		];
 		$http.get('/api/awesomeThings').success(function(awesomeThings) {
 		$scope.awesomeThings = awesomeThings;
-		console.log(awesomeThings);
 		});
 		$scope.open = function(name,picture){
-			console.log(name);
 			$scope.modalName = name;
 			$scope.modalPicture = picture;
 			var modalInstance = $modal.open({
 				templateUrl: '../../views/partials/imageModal.html',
-				controller: 'StartCtrl',
+				controller: 'ImageModalCtrl',
 				resolve: {
 					name: function(){
 						return $scope.modalName;
+					},
+					picture: function(){
+						return $scope.modalPicture;
 					}
 				}
 			});
 		};
+	})
+	.controller('ImageModalCtrl', function ($scope, $modalInstance, name, picture){
+		$scope.name = name;
+		$scope.picture = picture;
 	});
