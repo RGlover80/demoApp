@@ -1,0 +1,6 @@
+1. More images and data for games in JSON
+2. Details on modal with image
+3. New releases (tiles?)
+4. User reviews option (use rating form angular UI)
+5. Forum function to discuss topics/games (based on user)
+6. More users for testing 2
